@@ -9,25 +9,25 @@ class Services extends Component {
     services: [
       {
         icon: <FaCocktail />,
-        title: "free cocktails",
+        title: "Free Cocktails",
         info:
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, omnis."
       },
       {
-        icon: <FaCocktail />,
-        title: "free cocktails",
+        icon: <FaHiking />,
+        title: "Endless Hiking",
         info:
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, omnis."
       },
       {
-        icon: <FaCocktail />,
-        title: "free cocktails",
+        icon: <FaShuttleVan />,
+        title: "Free Shuttle",
         info:
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, omnis."
       },
       {
-        icon: <FaCocktail />,
-        title: "free cocktails",
+        icon: <FaBeer />,
+        title: "Strongest Beer",
         info:
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, omnis."
       }
@@ -36,9 +36,20 @@ class Services extends Component {
 
   render() {
     return (
-      <div>
+      <section className="services">
         <Title title="services" />
-      </div>
+        <div className="services-center">
+	        {this.state.services.map((item, index) => {
+	        	return (
+	        		<article key={index} className="service">
+				        <span>{item.icon}</span>
+				        <h6>{item.title}</h6>
+				        <p>{item.info}</p>
+			        </article>
+		        )
+	        })}
+        </div>
+      </section>
     );
   }
 }

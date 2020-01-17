@@ -14,3 +14,8 @@
 
 ####Issues
 - [Page Not Found on Netlify with React Router](https://sung.codes/blog/2018/12/18/page-not-found-on-netlify-with-react-router/)
+
+
+####React Content API
+- https://reactjs.org/docs/context.html#api
+ 
